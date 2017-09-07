@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+  background-color: #f2f2fe;
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3 {
+	font-family: 'Lato';
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	cursor: pointer;
+}
+
+.header {
+	display: inline;
+}
+
+.header li {
+	display: inline;
+	font-size: 1.5em;
+	word-spacing: 50px;
+}
+
+.header-links {
+	display: flex;
+	float: left;
+}
+
+.banner-img img {
+	width: 100%;
+}
+
+.new-blog-form {
+	margin-left: 25%;
+}
+
+.new-blog-form input {
+	font-size: 1.5em;
+}
+
+.new-blog-form textarea {
+	font-size: 1.2em;
+}
+
+.blog-title-form input {
+	margin-bottom: 2%;
+	opacity: 0.5;
+}
+
+.blog-title-form:hover input {
+	opacity: 1;
+	transition: opacity .5s ease;
+}
+
+.blog-content-form textarea {
+	opacity: 0.5;
+}
+
+.blog-content-form:hover textarea {
+	opacity: 1;
+	transition: opacity .5s ease;
+}
+/**/
+.ind-pub-blog {
+	float: left;
+	background-color: orange;
+	width: 27%;
+	margin: 2%;
+	min-height: 200px;
+}
+
+.ind-pub-blog:hover {
+	width: 28%;
+	transition: width 0.1s ease-in;
+}
+
+.pub-title {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.ind-pub-blog:hover .pub-title {
+	font-size: 1.7em;
+	transition: font-size 0.5s ease;
+}
+
+.ind-pub-blog:hover .pub-content {
+	white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+  font-size: 1.5em;
+  opacity: 1;
+  transition: opacity: 1s ease;
+}
+
+.ind-pub-blog:hover .fa {
+	opacity: 1;
+	transition: opacity: 1s ease;
+}
+
+.pub-content {
+	font-size: 1.3em;
+	opacity: 0.8;
+	/*    truncate:    */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fa {
+	margin-right: 5px;
+	opacity: 0.5;
+}
+
+button.published-btn {
+	width: 50%;
+	margin-top: 60px;
+	height: 40px;
+	font-size: 1em;
+	background-color: rgba(255, 255, 255, 0.01);
+	transition: background-color 0.5s ease;
+	border: 1px solid white;
+	color: white;
+	font-size: 0.9em;
+	font-style: none;
+	border-radius: 4px;
+}
+
+.published-btn:hover {
+	border: none;
+	transform: scale(0.9);
+	background-color: rgba(255, 255, 255, 0.4);
+	transition: background-color 0.5s ease;
+}
+
+.new-blog-form button {
+	margin-top: 10px;
+	width: 25%;
+	height: 40px;
+	font-size: 1em;
+	background-color: rgba(255, 255, 255, 0.01);
+	transition: background-color 0.5s ease;
+	border: 1px solid white;
+	color: white;
+	font-size: 0.9em;
+	font-style: none;
+	border-radius: 4px;
+}
+
+.new-blog-form button:hover {
+	border: none;
+	transform: scale(0.9);
+	background-color: rgba(255, 255, 255, 0.4);
+	transition: background-color 0.5s ease;
+}
+
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 800px) {
+	.tenButtons button {
+		margin: 0;
+		padding: 0;
+		width: 30%;
+		height: 50px;
+	}
+}
+
+@media screen and (max-width: 620px) {
+	.tenButtons button {
+		font-size: 0.5em;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.tenButtons button {
+		width: 40%;
+		height: 50px;
+	}
+}
+
+@media screen and (max-width: 200px) {
+	.tenButtons button {
+		width: 50%;
+		height: 50px;
+		font-size: 0.25em;
+	}
+}
+
+/* END OF MEDIA QUERIES*/
+
+
+/*   Day 5 animations */
+@keyframes colorchange {
+  0%   {background: #fff; transition: background 0.5s ease;}
+  25%   {background: #ccc; transition: background 0.5s ease;}
+  50%   {background: orange; transition: background 0.5s ease;}
+  75%   {background: #FBC02D; transition: background 0.5s ease;}
+  100%   {background: #536DFE; transition: background 0.5s ease;}
+}
+
+@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */ {
+  0%   {background: #fff; transition: background 0.5s ease;}
+  25%   {background: #ccc; transition: background 0.5s ease;}
+  50%   {background: orange; transition: background 0.5s ease;}
+  75%   {background: #FBC02D; transition: background 0.5s ease;}
+  100%   {background: #536DFE; transition: background 0.5s ease;}
+}
+
+@keyframes colorMove {
+    0% {
+      background-color: hsl(0, 100%, 50%);
+    }
+    50% {
+      background-color: hsl(120, 100%, 50%);
+    }
+    75% {
+      background-color: hsl(240, 100%, 50%);
+    }
+    100% {
+      background-color: hsl(360, 100%, 50%);
+    }
+}
+
+@-webkit-keyframes colorMove {
+    0% {
+      background-color: hsl(0, 100%, 50%);
+    }
+    50% {
+      background-color: hsl(120, 100%, 50%);
+    }
+    75% {
+      background-color: hsl(240, 100%, 50%);
+    }
+    100% {
+      background-color: hsl(360, 100%, 50%);
+    }
+}
+
+/* end of day 5 animations */
+
+/* day 8 animations */
+@-webkit-keyframes fallingTriangles {
+  0% {
+    opacity: 1;
+
+	-webkit-transform: translate(0, 0px) rotateZ(0deg);
+  }
+  75% {
+    opacity: 1;
+
+	-webkit-transform: translate(100px, 600px) rotateZ(270deg); 
+  }
+  100% {
+    opacity: 0;
+
+	-webkit-transform: translate(150px, 800px) rotateZ(360deg);
+  }
+}
+@-moz-keyframes fallingTriangles {
+  0% {
+    opacity: 1;
+    
+	-webkit-transform: translate(0, 0px) rotateZ(0deg);
+  }
+  75% {
+    opacity: 1;
+   
+	-webkit-transform: translate(100px, 600px) rotateZ(270deg); 
+  }
+  100% {
+    opacity: 0;
+    
+	-webkit-transform: translate(150px, 800px) rotateZ(360deg);
+  }
+}
+/* end of day 8 animations */
