@@ -13,10 +13,10 @@ class Header extends React.Component {
         <div className="header-links">
           <img src="./zen-logo.png" />
           <ul>
-            <li>home </li>
-            <li>about </li>
-            <li><u>blog</u> </li>
-            <li>contact</li>
+            <li><a href="javascript:void(0)">home </a></li>
+            <li><a href="javascript:void(0)">about </a></li>
+            <li><a href="javascript:void(0)"><u>blog</u></a></li>
+            <li><a href="javascript:void(0)"> contact</a></li>
           </ul>
         </div>
         <div className="banner-img">

@@ -6,7 +6,10 @@ import * as actions from '../actions/actions';
 class PublishedBlogs extends React.Component {
 
   removeBlogPost(blogPost) {
-    this.props.dispatch(actions.remove_blog_post(blogPost));
+    var doubleCheck = confirm("are you sure you want to delete this post?");
+    if (doubleCheck) {
+      this.props.dispatch(actions.remove_blog_post(blogPost));
+    }
   }
 
   editBlogStart(blogPost) {

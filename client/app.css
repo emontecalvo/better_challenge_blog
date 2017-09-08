@@ -20,6 +20,14 @@ button {
 	cursor: pointer;
 }
 
+a {
+	text-decoration: none;
+	display: inline;
+	font-size: 1.2em;
+	word-spacing: 50px;
+	color: black;
+}
+
 .header {
 	display: inline;
 }
@@ -78,11 +86,6 @@ button {
 	margin: 2%;
 	min-height: 200px;
 }
-
-/*.ind-pub-blog:hover {
-	width: 28%;
-	transition: width 0.1s ease-in;
-}*/
 
 .pub-title {
 	font-size: 1.5em;
