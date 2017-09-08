@@ -16,11 +16,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/emontecalvo/betterupblog.git"
+    "url": "git+https://github.com/emontecalvo/better_challenge_blog.git"
   },
   "author": "Emily Monte Calvo",
   "license": "MIT",
-  "homepage": "https://emontecalvo.github.io/betterupblog",
+  "homepage": "https://emontecalvo.github.io/better_challenge_blog",
   "dependencies": {
     "babel-cli": "^6.18.0",
     "babel-core": "^6.18.2",
