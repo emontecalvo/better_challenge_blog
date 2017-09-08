@@ -1,7 +1,7 @@
 ### BetterUp Blog Challenge
 
 ### LIVE SITE:
-* https://emontecalvo.github.io/better_challenge_blog
+* https://emontecalvo.github.io/better_challenge_blog/
 
 
 ### Setup Instructions:
