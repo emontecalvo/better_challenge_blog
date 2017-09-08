@@ -41,7 +41,7 @@ a {
 
 .header li {
 	display: inline;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	word-spacing: 50px;
 }
 
@@ -255,6 +255,12 @@ button.remove {
 		width: 80%;
 	}
 
+	a {
+		font-size: 1em;
+		word-spacing: 5px;
+	}
+
 }
+
 
 /* END OF MEDIA QUERIES*/
