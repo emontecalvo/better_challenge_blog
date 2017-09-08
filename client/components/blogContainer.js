@@ -17,14 +17,13 @@ class BlogContainer extends React.Component {
     if (!this.props.BlogStart) {
       return (
         <div>
-          <button onClick={() => this.startNewBlog()}>create blog post</button>
+          <div className="create-btn"><button onClick={() => this.startNewBlog()}>create</button></div>
           <PublishedBlogs />
         </div>
       )
     } else {
       return (
         <div>
-          <p>create a new blog post</p>
           <NewBlogPost />
         </div> 
       )

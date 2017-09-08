@@ -36,6 +36,7 @@ button {
 }
 
 .banner-img img {
+	margin-top: 1%;
 	width: 100%;
 }
 
@@ -72,24 +73,26 @@ button {
 /**/
 .ind-pub-blog {
 	float: left;
-	background-color: orange;
+	background-color: white;
 	width: 27%;
 	margin: 2%;
 	min-height: 200px;
 }
 
-.ind-pub-blog:hover {
+/*.ind-pub-blog:hover {
 	width: 28%;
 	transition: width 0.1s ease-in;
-}
+}*/
 
 .pub-title {
 	font-size: 1.5em;
+	font-color: gray;
 	font-weight: bold;
 }
 
 .ind-pub-blog:hover .pub-title {
 	font-size: 1.7em;
+	font-color: black;
 	transition: font-size 0.5s ease;
 }
 
@@ -97,7 +100,6 @@ button {
 	white-space: normal;
   overflow: visible;
   text-overflow: clip;
-  font-size: 1.5em;
   opacity: 1;
   transition: opacity: 1s ease;
 }
@@ -126,10 +128,10 @@ button.published-btn {
 	margin-top: 60px;
 	height: 40px;
 	font-size: 1em;
-	background-color: rgba(255, 255, 255, 0.01);
+	background-color: #f2f2fe;
 	transition: background-color 0.5s ease;
-	border: 1px solid white;
-	color: white;
+	border: 1px solid black;
+	color: black;
 	font-size: 0.9em;
 	font-style: none;
 	border-radius: 4px;
@@ -138,7 +140,7 @@ button.published-btn {
 .published-btn:hover {
 	border: none;
 	transform: scale(0.9);
-	background-color: rgba(255, 255, 255, 0.4);
+	background-color: #d4b7f4;
 	transition: background-color 0.5s ease;
 }
 
@@ -147,10 +149,10 @@ button.published-btn {
 	width: 25%;
 	height: 40px;
 	font-size: 1em;
-	background-color: rgba(255, 255, 255, 0.01);
+	background-color: rgba(255, 255, 255, 0.2);
 	transition: background-color 0.5s ease;
-	border: 1px solid white;
-	color: white;
+	border: 1px solid darkgray;
+	color: darkgray;
 	font-size: 0.9em;
 	font-style: none;
 	border-radius: 4px;
@@ -159,8 +161,33 @@ button.published-btn {
 .new-blog-form button:hover {
 	border: none;
 	transform: scale(0.9);
-	background-color: rgba(255, 255, 255, 0.4);
+	background-color: rgba(255, 255, 255, 0.8);
 	transition: background-color 0.5s ease;
+}
+
+.create-btn button {
+	margin-top: 10px;
+	width: 50%;
+	height: 40px;
+	font-size: 1em;
+	background-color: rgba(255, 255, 255, 0.2);
+	transition: background-color 0.5s ease;
+	border: 1px solid darkgray;
+	color: darkgray;
+	font-size: 0.9em;
+	font-style: none;
+	border-radius: 4px;
+}
+
+.create-btn button:hover {
+	border: none;
+	transform: scale(0.9);
+	background-color: rgba(255, 255, 255, 0.8);
+	transition: background-color 0.5s ease;
+}
+
+.create-btn {
+	margin-left: 35%;
 }
 
 

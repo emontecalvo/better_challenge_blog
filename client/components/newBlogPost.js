@@ -28,8 +28,8 @@ class NewBlogPost extends React.Component {
           }}
         >
 
-        <div className="blog-title-form"><input type="text" placeholder="enter title" name="title" /></div>
-        <div className="blog-content-form"><textarea rows="10" cols="80" placeholder="enter content" name="content" /></div>
+        <div className="blog-title-form"><input type="text" placeholder="title" name="title" /></div>
+        <div className="blog-content-form"><textarea rows="10" cols="80" placeholder="Cupcake ipsum dolor. Sit amet sesame snaps lemon drops jujubes lollipop jujubes. Dragée cookie muffin jelly beans." name="content" /></div>
 
       <button type="submit">
         publish
