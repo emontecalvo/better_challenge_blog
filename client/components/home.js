@@ -2,7 +2,6 @@ import React from 'react';
 import {connect} from 'react-redux';
 import * as actions from '../actions/actions';
 
-
 import BlogContainer from './blogContainer';
 import EditBlog from './editBlog';
 import Header from './header';

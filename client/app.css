@@ -183,7 +183,7 @@ button.remove {
 .published-btn:hover {
 	border: none;
 	transform: scale(0.9);
-	background-color: #d4b7f4;
+	background-color: #dce0fe;
 	transition: background-color 0.5s ease;
 }
 
@@ -204,7 +204,7 @@ button.remove {
 .new-blog-form button:hover {
 	border: none;
 	transform: scale(0.9);
-	background-color: rgba(255, 255, 255, 0.8);
+	background-color: #dce0fe;
 	transition: background-color 0.5s ease;
 }
 
@@ -225,7 +225,7 @@ button.remove {
 .create-btn button:hover {
 	border: none;
 	transform: scale(0.9);
-	background-color: rgba(255, 255, 255, 0.8);
+	background-color: #dce0fe;
 	transition: background-color 0.5s ease;
 }
 
@@ -254,6 +254,7 @@ button.remove {
 	input {
 		width: 80%;
 	}
+
 }
 
 /* END OF MEDIA QUERIES*/

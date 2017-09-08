@@ -11,7 +11,7 @@ class Header extends React.Component {
     return (
       <div className="header">
         <div className="header-links">
-          <img src="./zen-logo.png" />
+          <img className="logo-img" src="./zen-logo.png" />
           <ul>
             <li><a href="javascript:void(0)">home </a></li>
             <li><a href="javascript:void(0)">about </a></li>

@@ -3,7 +3,6 @@ import {connect} from 'react-redux';
 import * as actions from '../actions/actions';
 
 import NewBlogPost from './newBlogPost';
-
 import PublishedBlogs from './PublishedBlogs';
 
 
