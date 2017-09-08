@@ -3,6 +3,7 @@ import {connect} from 'react-redux';
 import * as actions from '../actions/actions';
 
 
+
 class EditBlog extends React.Component {
 
   constructor(props) {
@@ -33,7 +34,7 @@ class EditBlog extends React.Component {
           >
 
           <div className="blog-title-form"><input type="text" name="title" defaultValue={this.props.blogToEdit[0]}/></div>
-          <div className="blog-content-form"><textarea rows="10" cols="80" name="content" defaultValue={this.props.blogToEdit[1]}/></div>
+          <div className="blog-content-form"><textarea rows="10" cols="50" name="content" defaultValue={this.props.blogToEdit[1]}/></div>
           <button type="submit">
             save
           </button>

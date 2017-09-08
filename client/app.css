@@ -28,8 +28,15 @@ a {
 	color: black;
 }
 
+
+/* * * * * * * * * * * * * * * * * * * * */
+/*  HEADER Component */
+/* * * * * * * * * * * * * * * * * * * * */
+
 .header {
 	display: inline;
+	width: 100%;
+	top: 0;
 }
 
 .header li {
@@ -47,6 +54,13 @@ a {
 	margin-top: 1%;
 	width: 100%;
 }
+
+/*  end of header component */
+
+
+/* * * * * * * * * * * * * * * * * * * * */
+/*  NEW BLOG / EDIT Component */
+/* * * * * * * * * * * * * * * * * * * * */
 
 .new-blog-form {
 	margin-left: 25%;
@@ -78,12 +92,27 @@ a {
 	opacity: 1;
 	transition: opacity .5s ease;
 }
-/**/
+
+textarea {
+	width: 50%;
+}
+
+input {
+	width: 50%;
+}
+
+/*  end of new blog / edit component */
+
+
+/* * * * * * * * * * * * * * * * * * * * */
+/*  PUBLISHED BLOGS Component */
+/* * * * * * * * * * * * * * * * * * * * */
+
 .ind-pub-blog {
 	float: left;
 	background-color: white;
-	width: 27%;
-	margin: 2%;
+	width: 28%;
+	margin: 1%;
 	min-height: 200px;
 }
 
@@ -126,8 +155,15 @@ a {
 	opacity: 0.5;
 }
 
+/*  end of published blogs component */
+
+
+/* * * * * * * * * * * * * * * * * * * * */
+/*  BUTTONS */
+/* * * * * * * * * * * * * * * * * * * * */
+
 button.published-btn {
-	width: 50%;
+	width: 100%;
 	margin-top: 60px;
 	height: 40px;
 	font-size: 1em;
@@ -135,9 +171,13 @@ button.published-btn {
 	transition: background-color 0.5s ease;
 	border: 1px solid black;
 	color: black;
-	font-size: 0.9em;
+	font-size: 0.8em;
 	font-style: none;
 	border-radius: 4px;
+}
+
+button.remove {
+	margin-top: 10px;
 }
 
 .published-btn:hover {
@@ -154,8 +194,8 @@ button.published-btn {
 	font-size: 1em;
 	background-color: rgba(255, 255, 255, 0.2);
 	transition: background-color 0.5s ease;
-	border: 1px solid darkgray;
-	color: darkgray;
+	border: 1px solid black;
+	color: black;
 	font-size: 0.9em;
 	font-style: none;
 	border-radius: 4px;
@@ -175,8 +215,8 @@ button.published-btn {
 	font-size: 1em;
 	background-color: rgba(255, 255, 255, 0.2);
 	transition: background-color 0.5s ease;
-	border: 1px solid darkgray;
-	color: darkgray;
+	border: 1px solid black;
+	color: black;
 	font-size: 0.9em;
 	font-style: none;
 	border-radius: 4px;
@@ -193,125 +233,27 @@ button.published-btn {
 	margin-left: 35%;
 }
 
+/* end of button styling */
 
 
-
+/* * * * * * * * * * * * * * * * * * * * */
 /* MEDIA QUERIES */
+/* * * * * * * * * * * * * * * * * * * * */
+
 @media screen and (max-width: 800px) {
-	.tenButtons button {
-		margin: 0;
-		padding: 0;
-		width: 30%;
-		height: 50px;
-	}
+	.ind-pub-blog {
+		width: 90%;
 }
 
 @media screen and (max-width: 620px) {
-	.tenButtons button {
-		font-size: 0.5em;
-	}
-}
 
-@media screen and (max-width: 320px) {
-	.tenButtons button {
-		width: 40%;
-		height: 50px;
+	textarea {
+		width: 80%;
 	}
-}
 
-@media screen and (max-width: 200px) {
-	.tenButtons button {
-		width: 50%;
-		height: 50px;
-		font-size: 0.25em;
+	input {
+		width: 80%;
 	}
 }
 
 /* END OF MEDIA QUERIES*/
-
-
-/*   Day 5 animations */
-@keyframes colorchange {
-  0%   {background: #fff; transition: background 0.5s ease;}
-  25%   {background: #ccc; transition: background 0.5s ease;}
-  50%   {background: orange; transition: background 0.5s ease;}
-  75%   {background: #FBC02D; transition: background 0.5s ease;}
-  100%   {background: #536DFE; transition: background 0.5s ease;}
-}
-
-@-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */ {
-  0%   {background: #fff; transition: background 0.5s ease;}
-  25%   {background: #ccc; transition: background 0.5s ease;}
-  50%   {background: orange; transition: background 0.5s ease;}
-  75%   {background: #FBC02D; transition: background 0.5s ease;}
-  100%   {background: #536DFE; transition: background 0.5s ease;}
-}
-
-@keyframes colorMove {
-    0% {
-      background-color: hsl(0, 100%, 50%);
-    }
-    50% {
-      background-color: hsl(120, 100%, 50%);
-    }
-    75% {
-      background-color: hsl(240, 100%, 50%);
-    }
-    100% {
-      background-color: hsl(360, 100%, 50%);
-    }
-}
-
-@-webkit-keyframes colorMove {
-    0% {
-      background-color: hsl(0, 100%, 50%);
-    }
-    50% {
-      background-color: hsl(120, 100%, 50%);
-    }
-    75% {
-      background-color: hsl(240, 100%, 50%);
-    }
-    100% {
-      background-color: hsl(360, 100%, 50%);
-    }
-}
-
-/* end of day 5 animations */
-
-/* day 8 animations */
-@-webkit-keyframes fallingTriangles {
-  0% {
-    opacity: 1;
-
-	-webkit-transform: translate(0, 0px) rotateZ(0deg);
-  }
-  75% {
-    opacity: 1;
-
-	-webkit-transform: translate(100px, 600px) rotateZ(270deg); 
-  }
-  100% {
-    opacity: 0;
-
-	-webkit-transform: translate(150px, 800px) rotateZ(360deg);
-  }
-}
-@-moz-keyframes fallingTriangles {
-  0% {
-    opacity: 1;
-    
-	-webkit-transform: translate(0, 0px) rotateZ(0deg);
-  }
-  75% {
-    opacity: 1;
-   
-	-webkit-transform: translate(100px, 600px) rotateZ(270deg); 
-  }
-  100% {
-    opacity: 0;
-    
-	-webkit-transform: translate(150px, 800px) rotateZ(360deg);
-  }
-}
-/* end of day 8 animations */

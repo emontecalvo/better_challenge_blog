@@ -16,7 +16,7 @@ class BlogContainer extends React.Component {
   render() {
     if (!this.props.BlogStart) {
       return (
-        <div>
+        <div className="blog-container">
           <div className="create-btn"><button onClick={() => this.startNewBlog()}>create</button></div>
           <PublishedBlogs />
         </div>

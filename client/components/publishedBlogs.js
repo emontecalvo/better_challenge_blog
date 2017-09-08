@@ -19,8 +19,8 @@ class PublishedBlogs extends React.Component {
 
   render() { 
     return (
-      <div className="published-blog">
-        <ul>
+        <div className="published-blog">
+          <ul>
           {this.props.BlogList.map((blog, index) => {
             return <div key={index} className="ind-pub-blog">
               <div>
@@ -28,7 +28,7 @@ class PublishedBlogs extends React.Component {
     		        <p className="pub-content">{blog[1]}</p>
               </div>
               <button className="published-btn" onClick={() => this.editBlogStart(blog)}>edit</button>
-              <button className="published-btn" onClick={() => this.removeBlogPost(blog)}>remove</button>
+              <button className="published-btn remove" onClick={() => this.removeBlogPost(blog)}>remove</button>
             </div>;
           })}
         </ul>
