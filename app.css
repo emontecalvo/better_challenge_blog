@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+  background-color: #f2f2fe;
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3 {
+	font-family: 'Lato';
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	display: inline;
+	font-size: 1.2em;
+	word-spacing: 50px;
+	color: black;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * */
+/*  HEADER Component */
+/* * * * * * * * * * * * * * * * * * * * */
+
+.header {
+	display: inline;
+	width: 100%;
+	top: 0;
+}
+
+.header li {
+	display: inline;
+	font-size: 1.5em;
+	word-spacing: 50px;
+}
+
+.header-links {
+	display: flex;
+	float: left;
+}
+
+.banner-img img {
+	margin-top: 1%;
+	width: 100%;
+}
+
+/*  end of header component */
+
+
+/* * * * * * * * * * * * * * * * * * * * */
+/*  NEW BLOG / EDIT Component */
+/* * * * * * * * * * * * * * * * * * * * */
+
+.new-blog-form {
+	margin-left: 25%;
+}
+
+.new-blog-form input {
+	font-size: 1.5em;
+}
+
+.new-blog-form textarea {
+	font-size: 1.2em;
+}
+
+.blog-title-form input {
+	margin-bottom: 2%;
+	opacity: 0.5;
+}
+
+.blog-title-form:hover input {
+	opacity: 1;
+	transition: opacity .5s ease;
+}
+
+.blog-content-form textarea {
+	opacity: 0.5;
+}
+
+.blog-content-form:hover textarea {
+	opacity: 1;
+	transition: opacity .5s ease;
+}
+
+textarea {
+	width: 50%;
+}
+
+input {
+	width: 50%;
+}
+
+/*  end of new blog / edit component */
+
+
+/* * * * * * * * * * * * * * * * * * * * */
+/*  PUBLISHED BLOGS Component */
+/* * * * * * * * * * * * * * * * * * * * */
+
+.ind-pub-blog {
+	float: left;
+	background-color: white;
+	width: 28%;
+	margin: 1%;
+	min-height: 200px;
+}
+
+.pub-title {
+	font-size: 1.5em;
+	font-color: gray;
+	font-weight: bold;
+}
+
+.ind-pub-blog:hover .pub-title {
+	font-size: 1.7em;
+	font-color: black;
+	transition: font-size 0.5s ease;
+}
+
+.ind-pub-blog:hover .pub-content {
+	white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+  opacity: 1;
+  transition: opacity: 1s ease;
+}
+
+.ind-pub-blog:hover .fa {
+	opacity: 1;
+	transition: opacity: 1s ease;
+}
+
+.pub-content {
+	font-size: 1.3em;
+	opacity: 0.8;
+	/*    truncate:    */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.fa {
+	margin-right: 5px;
+	opacity: 0.5;
+}
+
+/*  end of published blogs component */
+
+
+/* * * * * * * * * * * * * * * * * * * * */
+/*  BUTTONS */
+/* * * * * * * * * * * * * * * * * * * * */
+
+button.published-btn {
+	width: 100%;
+	margin-top: 60px;
+	height: 40px;
+	font-size: 1em;
+	background-color: #f2f2fe;
+	transition: background-color 0.5s ease;
+	border: 1px solid black;
+	color: black;
+	font-size: 0.8em;
+	font-style: none;
+	border-radius: 4px;
+}
+
+button.remove {
+	margin-top: 10px;
+}
+
+.published-btn:hover {
+	border: none;
+	transform: scale(0.9);
+	background-color: #dce0fe;
+	transition: background-color 0.5s ease;
+}
+
+.new-blog-form button {
+	margin-top: 10px;
+	width: 25%;
+	height: 40px;
+	font-size: 1em;
+	background-color: rgba(255, 255, 255, 0.2);
+	transition: background-color 0.5s ease;
+	border: 1px solid black;
+	color: black;
+	font-size: 0.9em;
+	font-style: none;
+	border-radius: 4px;
+}
+
+.new-blog-form button:hover {
+	border: none;
+	transform: scale(0.9);
+	background-color: #dce0fe;
+	transition: background-color 0.5s ease;
+}
+
+.create-btn button {
+	margin-top: 10px;
+	width: 50%;
+	height: 40px;
+	font-size: 1em;
+	background-color: rgba(255, 255, 255, 0.2);
+	transition: background-color 0.5s ease;
+	border: 1px solid black;
+	color: black;
+	font-size: 0.9em;
+	font-style: none;
+	border-radius: 4px;
+}
+
+.create-btn button:hover {
+	border: none;
+	transform: scale(0.9);
+	background-color: #dce0fe;
+	transition: background-color 0.5s ease;
+}
+
+.create-btn {
+	margin-left: 35%;
+}
+
+/* end of button styling */
+
+
+/* * * * * * * * * * * * * * * * * * * * */
+/* MEDIA QUERIES */
+/* * * * * * * * * * * * * * * * * * * * */
+
+@media screen and (max-width: 800px) {
+	.ind-pub-blog {
+		width: 90%;
+}
+
+@media screen and (max-width: 620px) {
+
+	textarea {
+		width: 80%;
+	}
+
+	input {
+		width: 80%;
+	}
+
+}
+
+/* END OF MEDIA QUERIES*/
