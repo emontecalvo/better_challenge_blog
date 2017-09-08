@@ -27,8 +27,8 @@ class PublishedBlogs extends React.Component {
             		<p className="pub-title"><i className="fa fa-ravelry" aria-hidden="true"></i><strong> {blog[0]}</strong></p>
     		        <p className="pub-content">{blog[1]}</p>
               </div>
-              <button className="published-btn" onClick={() => this.editBlogStart(blog)}>edit</button>
-              <button className="published-btn remove" onClick={() => this.removeBlogPost(blog)}>remove</button>
+              <button className="published-btn" onClick={() => this.editBlogStart(blog)}><i className="fa fa-pencil" aria-hidden="true"></i>edit</button>
+              <button className="published-btn remove" onClick={() => this.removeBlogPost(blog)}><i className="fa fa-trash-o" aria-hidden="true"></i>remove</button>
             </div>;
           })}
         </ul>

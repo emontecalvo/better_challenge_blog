@@ -35,12 +35,12 @@ class EditBlog extends React.Component {
 
           <div className="blog-title-form"><input type="text" name="title" defaultValue={this.props.blogToEdit[0]}/></div>
           <div className="blog-content-form"><textarea rows="10" name="content" defaultValue={this.props.blogToEdit[1]}/></div>
-          <button type="submit">
+          <button type="submit"><i className="fa fa-floppy-o" aria-hidden="true"></i>
             save
           </button>
 
   </form>
-      <button onClick={() => this.cancelEdit()}>cancel</button>
+      <button onClick={() => this.cancelEdit()}><i className="fa fa-angle-left" aria-hidden="true"></i>cancel</button>
       </div>
     )
   }
